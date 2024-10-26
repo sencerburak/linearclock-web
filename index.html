@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinearClock - Visualize Your Day</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+        .feature-card {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="gradient-bg text-gray-100 min-h-screen">
+    <!-- Hero Section -->
+    <header class="container mx-auto px-4 py-16 text-center">
+        <div class="mb-8">
+            <img src="./logo.png" alt="LinearClock Logo" class="mx-auto rounded-xl shadow-2xl">
+        </div>
+        <h1 class="text-5xl font-bold mb-4">LinearClock</h1>
+        <p class="text-xl text-gray-400 mb-8">Visualize your day in a beautiful linear timeline</p>
+        <div class="max-w-4xl mx-auto">
+            <img src="./screenshot1.png" alt="LinearClock Screenshot" class="rounded-lg shadow-2xl w-full">
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Features</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="feature-card p-6 rounded-xl">
+                <div class="text-blue-400 mb-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Visual Time Management</h3>
+                <p class="text-gray-400">See your entire day at a glance with an intuitive linear timeline in your menu bar.</p>
+            </div>
+            
+            <div class="feature-card p-6 rounded-xl">
+                <div class="text-green-400 mb-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Customizable Segments</h3>
+                <p class="text-gray-400">Create and customize time segments with different colors and labels to organize your schedule.</p>
+            </div>
+            
+            <div class="feature-card p-6 rounded-xl">
+                <div class="text-purple-400 mb-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Simple Settings</h3>
+                <p class="text-gray-400">Adjust the clock width and appearance to match your preferences with easy-to-use controls.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Screenshots -->
+    <section class="bg-black bg-opacity-30 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">See It In Action</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <img src="./screenshot2.png" alt="Segment Editor Screenshot" class="rounded-lg shadow-xl w-full">
+                    <p class="text-center mt-4 text-gray-400">Powerful Segment Editor</p>
+                </div>
+                <div>
+                    <img src="./screenshot3.png" alt="Settings Screenshot" class="rounded-lg shadow-xl w-full">
+                    <p class="text-center mt-4 text-gray-400">Intuitive Settings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="container mx-auto px-4 py-16 text-center">
+        <h2 class="text-3xl font-bold mb-8">Ready to Try LinearClock?</h2>
+        <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200">
+            Download for macOS
+        </a>
+        <p class="mt-4 text-gray-400">Requires macOS 11.0 or later</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-30 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400 mb-4">Questions or feedback? Reach out to us:</p>
+            <a href="mailto:support@motorama.app" class="text-blue-400 hover:text-blue-300 transition-colors duration-200">
+                support@motorama.app
+            </a>
+            <p class="mt-8 text-sm text-gray-500">© 2024 LinearClock. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
